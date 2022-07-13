@@ -20,7 +20,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .service(hello)
             .service(echo)
-            .route("/hey", web::get().to(manual_hello))
+            .route("/hey!!", web::get().to(manual_hello))
     })
         .bind(("127.0.0.1", 8080))?
         .run()
